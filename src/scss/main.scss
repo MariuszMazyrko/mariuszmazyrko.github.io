@@ -3,8 +3,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext');
 
+@import "modules/hero.scss";
+
 html {
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 *,
@@ -18,4 +21,6 @@ body {
   background: #ffffff;
   font-family: 'Poppins', sans-serif;
   border: 16px solid $big-stone;
+  -webkit-font-smothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
