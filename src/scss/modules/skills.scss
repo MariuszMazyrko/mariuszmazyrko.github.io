@@ -1,0 +1,80 @@
+.skills {
+    max-width: 1184px;
+    margin: 0 auto;
+
+
+    .title {
+        font-size: 2.25rem;
+        margin: 0;
+        font-style: normal;
+        font-weight: 600;
+        padding: 1rem 0;
+        border-bottom: 2px solid #E5E8EC;
+    }
+}
+
+.skills-list {
+    display: grid;
+    padding: 8rem 0 0;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+
+    &__item {
+        color: $gray;
+        padding: 11px 0 11px 30px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            content: "";
+            display: block;
+            width: 18px;
+            height: 18px;
+            background: url(../assets/img/check-green.svg);
+
+            .skills-list--violet & {
+                background: url(../assets/img/check-violet.svg);
+            }
+
+            .skills-list--blue & {
+                background: url(../assets/img/check-blue.svg);
+            }
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        list-style-type: none;
+        padding: 0;
+        margin: calc(1.5rem + 4px);
+        column-gap: 1.5rem;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 44px;
+        margin: 0;
+
+        &::before {
+            content: "";
+            width: 80px;
+            height: 4px;
+            display: block;
+            background: $green;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+
+            .skills-list--violet & {
+                background: $violet;
+            }
+
+            .skills-list--blue & {
+                background: $dark-blue;
+            }
+        }
+    }
+}
