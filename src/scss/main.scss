@@ -12,6 +12,10 @@ html {
   box-sizing: border-box;
   font-size: 16px;
   scroll-behavior: smooth;
+
+  @media (max-width:$mobile) {}
+
+  ;
 }
 
 *,
@@ -30,6 +34,7 @@ body {
 }
 
 .container {
-  max-width: 1184px;
+  max-width: 1216px;
   margin: 0 auto;
+  padding: 0 16px;
 }
