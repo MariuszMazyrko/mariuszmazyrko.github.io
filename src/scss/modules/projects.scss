@@ -31,14 +31,22 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+
+    @media (max-width: $mobile) {
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+
+    }
 }
+
 
 .project {
     background: #fff;
     box-shadow: 0 6px 16px rgba(24, 41, 67, 0.09);
     border-radius: 8px;
     overflow: hidden;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     &__container {
         padding: 3rem;
