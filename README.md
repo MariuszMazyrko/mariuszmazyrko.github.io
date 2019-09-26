@@ -1,3 +1,5 @@
+![Mariusz Mazyrko - Personal portfolio](src/assets/img/cover.png)
+
 # Mariusz Mazyrko - Personal portfolio
 ### mariuszmazyrko.github.io
 #
