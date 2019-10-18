@@ -1,57 +1,59 @@
 .hero {
-    max-width: 1216px;
-    padding: calc(8rem - 16px) 16px 11.5rem;
-    margin: 0 auto;
+  max-width: 1216px;
+  padding: calc(7rem - 16px) 16px 11.5rem;
+  margin: 0 auto;
 
-    @media (max-width:$mobile) {
-        padding: 64px 16px 120px;
+  @media (max-width: $mobile) {
+    padding: 64px 16px 120px;
+  }
+
+  &__description {
+    color: $gray;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    max-width: 780px;
+    margin-top: 3rem;
+    margin-bottom: 3.75rem;
+  }
+
+  &__image {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 1.75rem;
+
+    @media (max-width: $mobile) {
+      width: 80px;
+      height: 80px;
     }
+  }
 
-    &__description {
-        color: $gray;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 1.25rem;
-        line-height: 2.25rem;
-        max-width: 780px;
-        margin-bottom: 3.75rem;
+  &__link {
+    color: $blue;
+    font-weight: 500;
+  }
+
+  &__mail {
+    color: $blue;
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding-bottom: 8px;
+    border-bottom: 2px solid $blue;
+  }
+
+  &__title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    max-width: 780px;
+    margin: 2rem 0 1rem;
+
+    @media (max-width: $mobile) {
+      margin: 16px 0 8px;
     }
-
-    &__image {
-        width: 120px;
-        height: 120px;
-
-        @media (max-width:$mobile) {
-            width: 80px;
-            height: 80px;
-        }
-    }
-
-    &__link {
-        color: $blue;
-        font-weight: 500;
-    }
-
-    &__mail {
-        color: $blue;
-        font-weight: 500;
-        font-size: 1.25rem;
-        text-decoration: none;
-        padding-bottom: 8px;
-        border-bottom: 2px solid $blue;
-    }
-
-    &__title {
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 2.5rem;
-        line-height: 3.5rem;
-        max-width: 780px;
-        margin: 2rem 0 1rem;
-
-        @media (max-width:$mobile) {
-            margin: 16px 0 8px;
-        }
-    }
+  }
 }
